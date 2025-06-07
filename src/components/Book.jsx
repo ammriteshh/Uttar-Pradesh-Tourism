@@ -92,12 +92,9 @@ pages.forEach((page) => {
 });
 
 const Page = ({ number, front, back, page, opened, bookClosed, ...props }) => {
-  const [picture, picture2, pictureRoughness] = useTexture([
+  const [picture, picture2] = useTexture([
     `/textures/${front}.jpg`,
     `/textures/${back}.jpg`,
-    ...(number === 0 || number === pages.length - 1
-      ? [`/textures/book-cover-roughness.jpg`]
-      : []),
   ]);
   picture.colorSpace = picture2.colorSpace = SRGBColorSpace;
   const group = useRef();
@@ -129,7 +126,6 @@ const Page = ({ number, front, back, page, opened, bookClosed, ...props }) => {
         map: picture,
         ...(number === 0
           ? {
-              roughnessMap: pictureRoughness,
             }
           : {
               roughness: 0.1,
@@ -142,7 +138,6 @@ const Page = ({ number, front, back, page, opened, bookClosed, ...props }) => {
         map: picture2,
         ...(number === pages.length - 1
           ? {
-              roughnessMap: pictureRoughness,
             }
           : {
               roughness: 0.1,
