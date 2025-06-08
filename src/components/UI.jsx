@@ -36,7 +36,7 @@ for (let i = 1; i < pictures.length - 1; i += 2) {
 
 pages.push({
   front: pictures[pictures.length - 1],
-  back: "book-back",
+  back: "back-cover",
 });
 
 export const UI = () => {
