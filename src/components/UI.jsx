@@ -52,7 +52,7 @@ export const UI = () => {
       <main className=" pointer-events-none select-none z-10 fixed  inset-0  flex justify-between flex-col">
         <a
           className="pointer-events-auto mt-10 ml-10"
-          // href="https://lessons.wawasensei.dev/courses/react-three-fiber"
+        // href="https://lessons.wawasensei.dev/courses/react-three-fiber"
         >
           <img className="w-20" src="/images/up-tourism.png" />
         </a>
@@ -61,22 +61,20 @@ export const UI = () => {
             {[...pages].map((_, index) => (
               <button
                 key={index}
-                className={`border-transparent hover:border-white transition-all duration-300  px-4 py-3 rounded-full  text-lg uppercase shrink-0 border ${
-                  index === page
+                className={`border-transparent hover:border-white transition-all duration-300  px-4 py-3 rounded-full  text-lg uppercase shrink-0 border ${index === page
                     ? "bg-white/90 text-black"
                     : "bg-black/30 text-white"
-                }`}
+                  }`}
                 onClick={() => setPage(index)}
               >
                 {index === 0 ? "Cover" : `Page ${index}`}
               </button>
             ))}
             <button
-              className={`border-transparent hover:border-white transition-all duration-300  px-4 py-3 rounded-full  text-lg uppercase shrink-0 border ${
-                page === pages.length
+              className={`border-transparent hover:border-white transition-all duration-300  px-4 py-3 rounded-full  text-lg uppercase shrink-0 border ${page === pages.length
                   ? "bg-white/90 text-black"
                   : "bg-black/30 text-white"
-              }`}
+                }`}
               onClick={() => setPage(pages.length)}
             >
               Back Cover
@@ -98,4 +96,4 @@ export const UI = () => {
       </div>
     </>
   );
-};
+}
