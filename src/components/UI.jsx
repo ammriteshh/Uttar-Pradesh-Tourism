@@ -95,5 +95,5 @@ export const UI = () => {
         </div>
       </div>
     </>
-  );
+  )
 };
