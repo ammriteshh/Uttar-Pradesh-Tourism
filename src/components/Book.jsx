@@ -83,7 +83,7 @@ const pageMaterials = [
   new MeshStandardMaterial({
     color: whiteColor,
   }),
-];
+]
 
 pages.forEach((page) => {
   useTexture.preload(`/textures/${page.front}.jpg`);
