@@ -44,7 +44,7 @@ pageGeometry.translate(PAGE_WIDTH / 2, 0, 0);
 const position = pageGeometry.attributes.position;
 const vertex = new Vector3();
 const skinIndexes = [];
-const skinWeights = []
+const skinWeights = [];
 
 for (let i = 0; i < position.count; i++) {
   // ALL VERTICES
