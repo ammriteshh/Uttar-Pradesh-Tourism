@@ -44,7 +44,7 @@ pageGeometry.translate(PAGE_WIDTH / 2, 0, 0);
 const position = pageGeometry.attributes.position;
 const vertex = new Vector3();
 const skinIndexes = [];
-const skinWeights = [];
+const skinWeights = []
 
 for (let i = 0; i < position.count; i++) {
   // ALL VERTICES
@@ -126,10 +126,10 @@ const Page = ({ number, front, back, page, opened, bookClosed, ...props }) => {
         map: picture,
         ...(number === 0
           ? {
-            }
+          }
           : {
-              roughness: 0.1,
-            }),
+            roughness: 0.1,
+          }),
         emissive: emissiveColor,
         emissiveIntensity: 0,
       }),
@@ -138,10 +138,10 @@ const Page = ({ number, front, back, page, opened, bookClosed, ...props }) => {
         map: picture2,
         ...(number === pages.length - 1
           ? {
-            }
+          }
           : {
-              roughness: 0.1,
-            }),
+            roughness: 0.1,
+          }),
         emissive: emissiveColor,
         emissiveIntensity: 0,
       }),
