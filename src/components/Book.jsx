@@ -65,7 +65,7 @@ pageGeometry.setAttribute(
 pageGeometry.setAttribute(
   "skinWeight",
   new Float32BufferAttribute(skinWeights, 4)
-);
+)
 
 const whiteColor = new Color("white");
 const emissiveColor = new Color("orange");
